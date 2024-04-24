@@ -127,6 +127,7 @@ export default function NavbarComponent() {
               />
             </div>
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-3xl bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              {/* List */}
               <li>
                 <Link
                   href="/todo-list"
@@ -156,6 +157,7 @@ export default function NavbarComponent() {
                   </span>
                 </Link>
               </li>
+              {/* Board */}
 
               <li>
                 <Link
@@ -187,8 +189,14 @@ export default function NavbarComponent() {
                 </Link>
               </li>
             </ul>
-            
-            <div className={`${pathname === "/todo-list" ? "border-b-2 border-b-blue-700 absolute bottom-0 w-20 left-2" : "border-b-2 border-b-blue-700 absolute bottom-0 w-90 left-24"}`}></div>
+
+            <div
+              className={`${
+                pathname === "/todo-list"
+                  ? "border-b-2 border-b-blue-700 absolute bottom-0 w-20 left-2"
+                  : "border-b-2 border-b-blue-700 absolute bottom-0 w-90 left-24"
+              }`}
+            ></div>
           </div>
         </div>
       </div>

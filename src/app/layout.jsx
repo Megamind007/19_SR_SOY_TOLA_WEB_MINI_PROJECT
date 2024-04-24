@@ -1,6 +1,13 @@
-import ListBoardComponentHeader from "@/components/ListBoardComponentHeader";
+
 import "./globals.css";
+import AddNewTaskComponent from "@/components/AddNewTaskComponent";
+import EditDeleteDropDownComponent from "@/components/EditDeleteDropDownComponent";
+import ListBoardComponentHeader from "@/components/ListBoardComponentHeader";
+import MonthlyStatisticsComponent from "@/components/MonthlyStatisticsComponent";
+import NavbarComponent from "@/components/NavbarComponent";
+import SidebarComponent from "@/components/SidebarComponent";
 import TodoCardComponent from "@/components/TodoCardComponent";
+import WorkspacePopupComponent from "@/components/WorkspacePopupComponent";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,8 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="font-SFProDisplay">
+        {/* <NavbarComponent />
+        <AddNewTaskComponent />
+        <EditDeleteDropDownComponent />
         <ListBoardComponentHeader />
-        <TodoCardComponent/>
+        <MonthlyStatisticsComponent />
+        <SidebarComponent />
+        <TodoCardComponent />
+        <WorkspacePopupComponent /> */}
+
+        {/* <AddNewTaskComponent /> */}
+
         {children}
       </body>
     </html>

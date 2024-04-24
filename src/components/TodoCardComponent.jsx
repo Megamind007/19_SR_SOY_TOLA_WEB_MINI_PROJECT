@@ -4,7 +4,7 @@ import EditDeleteDropDownComponent from "./EditDeleteDropDownComponent";
 
 export default function TodoCardComponent() {
   return (
-    <div className="border border-gray rounded-lg w-todoCardWidth mt-5 relative">
+    <div className="border border-gray rounded-lg w-full mt-5 relative">
       <div className="p-5">
         <div className="flex justify-between">
           <p>Slack Integration</p>
